@@ -1,0 +1,7 @@
+use strict;
+use warnings;
+print"Random Hobby Picker, from set list\n";
+my @list=("Perl\n","Duolingo\n","Glossika\n","Dog\n", "Read\n"); 
+print "The 5 hobbies are: @list\n";
+
+#program picks from pre-made list of hobbies
