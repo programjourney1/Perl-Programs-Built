@@ -1,0 +1,34 @@
+use strict;
+use warnings;
+
+print "Hello Perl!\n";
+my $feeling1= "happy";
+my $variable=5;
+my $feeling2 = "lazy";
+my $addvar= $feeling1 .' '. $feeling2; #' ' = space
+print "feelings: $addvar\n";
+for (my $i=0; $i <= 9; $i++) {
+   print "$i\n";
+}#= 0123456789 on new lines
+my $a=10;
+while ($a<20)
+{printf "a value: $a\n";
+$a=$a+2;} #prints even
+#new part if, else elsif
+my $age=26;
+
+if($age>18)
+   {print"adult\n";}
+elsif($age==18)
+   {print "new adult\n";}
+else
+   {print "child\n";}
+ #arrays
+ my @array= 0;
+ push(@array,"one");
+ print "@array\n";
+ push (@array,2);
+ print "@array\n";
+ pop (@array); 
+ print "@array\n";
+ print 5+2;
