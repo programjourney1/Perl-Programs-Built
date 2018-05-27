@@ -1,0 +1,10 @@
+#translate
+my $Hola== "Hello";
+my $Adios== "bye";
+print "Enter Word\n";
+my $word= <STDIN>;
+if ( $word=="Hola")
+{print "hello";}
+else {print "bye"}
+
+#Easily expanded basis for a simple Translation program, works much as google translate
