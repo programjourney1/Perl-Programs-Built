@@ -1,0 +1,19 @@
+#input 4 langs, and program will select random for you.
+
+print"Want to learn a Language? \n Enter lang 1:\n";
+$lang1 = <STDIN>;
+print "Enter lang 2:\n";
+$lang2=<STDIN>;
+print "enter lang 3\n";
+$lang3 = <STDIN>;
+print "Enter lang 4:\n";
+$lang4=<STDIN>;
+my @list=($lang1,$lang2, $lang3, $lang4); 
+print "The 4 Languages are:\n @list\n";
+my $out= $list [rand @list];
+print "press 1 to pick random\n";
+my $inpu= <STDIN>;
+if ( $inpu == 1)
+{print "Your random Language is: $out\n";}
+else
+{print "maybe not\n";}
