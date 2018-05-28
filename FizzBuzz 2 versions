@@ -1,0 +1,22 @@
+#Short way
+print 'Fizz'x!($_ % 3) . 'Buzz'x!($_ % 5) || $_, "\n" for 1 .. 100;
+
+#long way
+#!/usr/bin/perl
+
+# FizzBuzz in Perl 5.10
+use strict;
+use warnings;
+use diagnostics;
+use 5.10.0;
+for my $n (1..100) {
+    # Print word if...
+    !($n % 15) ?    say "FizzBuzz"    :   # Divisible by 3 and 5
+
+    !($n % 3)  ?    say "Fizz"        :   # Divisible by 3
+
+    !($n % 5)  ?    say "Buzz"        :   # Divisible by 5
+
+                    say "$n";             # Else just print the number
+
+}
